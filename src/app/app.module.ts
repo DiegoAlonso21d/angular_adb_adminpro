@@ -9,6 +9,10 @@ import { PagesModule } from './pages/pages.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AuthModule } from './auth/auth.module';
+import { FormsModule } from '@angular/forms';
+
+
+
 
 
 
@@ -17,17 +21,20 @@ import { AuthModule } from './auth/auth.module';
   declarations: [
     AppComponent,
    
-    NopagefoundComponent
+    NopagefoundComponent,
+      
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    AuthModule
+    AuthModule,
+    FormsModule,
+   
     
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule{ }
